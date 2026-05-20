@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Phạm Quốc Toàn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">PQT</div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link"><i class="fas fa-user"></i><span>About</span></a>
+      <a href="cv.html" class="nav-link"><i class="fas fa-file-alt"></i><span>CV</span></a>
+      <a href="product.html" class="nav-link"><i class="fas fa-th-large"></i><span>My Product</span></a>
+      <a href="contact.html" class="nav-link active"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
+    </nav>
+    <div class="sidebar-socials">
+      <a href="https://github.com/" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar-logo">PQT</div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+    <a href="cv.html" class="nav-link"><i class="fas fa-file-alt"></i> CV</a>
+    <a href="product.html" class="nav-link"><i class="fas fa-th-large"></i> My Product</a>
+    <a href="contact.html" class="nav-link active"><i class="fas fa-paper-plane"></i> Contact</a>
+  </div>
+
+  <main class="main-content">
+    <div class="page-inner fade-in">
+      <div class="page-header">
+        <h1 class="page-title">Liên hệ</h1>
+        <p class="page-subtitle">Mình luôn sẵn sàng kết nối và hợp tác!</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>Thông tin liên lạc</h3>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <label>Email</label>
+              <a href="mailto:phamquoctoan@email.com">phamquoctoan@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <label>Điện thoại</label>
+              <a href="tel:+84000000000">+84 000 000 000</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <label>Địa chỉ</label>
+              <span>Hồ Chí Minh, Việt Nam</span>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" class="csocial github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="csocial linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://facebook.com/" target="_blank" class="csocial facebook">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap">
+          <h3>Gửi tin nhắn</h3>
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Họ tên</label>
+                <input type="text" placeholder="Nguyễn Văn A" id="fname"/>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="email@example.com" id="femail"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tiêu đề</label>
+              <input type="text" placeholder="Về dự án..." id="fsubject"/>
+            </div>
+            <div class="form-group">
+              <label>Nội dung</label>
+              <textarea placeholder="Nội dung tin nhắn..." rows="5" id="fmessage"></textarea>
+            </div>
+            <button class="btn-primary btn-full" id="sendBtn" onclick="handleSend()">
+              Gửi tin nhắn <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="formMsg" class="form-msg"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    function handleSend() {
+      const name = document.getElementById('fname').value.trim();
+      const email = document.getElementById('femail').value.trim();
+      const msg = document.getElementById('fmessage').value.trim();
+      const formMsg = document.getElementById('formMsg');
+      if (!name || !email || !msg) {
+        formMsg.textContent = '⚠️ Vui lòng điền đầy đủ thông tin.';
+        formMsg.className = 'form-msg error';
+        return;
+      }
+      formMsg.textContent = '✅ Cảm ơn! Mình sẽ phản hồi sớm nhất có thể.';
+      formMsg.className = 'form-msg success';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Product — Phạm Quốc Toàn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">PQT</div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link"><i class="fas fa-user"></i><span>About</span></a>
+      <a href="cv.html" class="nav-link"><i class="fas fa-file-alt"></i><span>CV</span></a>
+      <a href="product.html" class="nav-link active"><i class="fas fa-th-large"></i><span>My Product</span></a>
+      <a href="contact.html" class="nav-link"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
+    </nav>
+    <div class="sidebar-socials">
+      <a href="https://github.com/" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar-logo">PQT</div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+    <a href="cv.html" class="nav-link"><i class="fas fa-file-alt"></i> CV</a>
+    <a href="product.html" class="nav-link active"><i class="fas fa-th-large"></i> My Product</a>
+    <a href="contact.html" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
+  </div>
+
+  <main class="main-content">
+    <div class="page-inner fade-in">
+      <div class="page-header">
+        <h1 class="page-title">My Product</h1>
+        <p class="page-subtitle">Các dự án mình đã xây dựng</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+        <button class="filter-btn" data-filter="other">Khác</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-cat="web">
+          <div class="product-thumb thumb-1">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-tags"><span class="ptag">Next.js</span><span class="ptag">TypeScript</span></div>
+            <h3>ComicVerse</h3>
+            <p>Website showcase truyện tranh với giao diện hiện đại, tìm kiếm và lọc theo thể loại.</p>
+            <div class="product-links">
+              <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="plink plink-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="web">
+          <div class="product-thumb thumb-2">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
+            <h3>Portfolio Website</h3>
+            <p>Trang portfolio cá nhân với thiết kế gradient hiện đại, responsive và deploy lên GitHub Pages.</p>
+            <div class="product-links">
+              <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="plink plink-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="ui">
+          <div class="product-thumb thumb-3">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-tags"><span class="ptag">Figma</span><span class="ptag">UI Design</span></div>
+            <h3>App Mockup</h3>
+            <p>Thiết kế giao diện ứng dụng di động với hệ thống design system nhất quán.</p>
+            <div class="product-links">
+              <a href="#" class="plink"><i class="fab fa-figma"></i> Figma</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="other">
+          <div class="product-thumb thumb-4">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-tags"><span class="ptag">Sắp tới</span></div>
+            <h3>Dự án mới</h3>
+            <p>Đang phát triển... Theo dõi GitHub để cập nhật dự án mới nhất của mình.</p>
+            <div class="product-links">
+              <a href="https://github.com/" target="_blank" class="plink"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phạm Quốc Toàn — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Background blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Sidebar Nav -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">PQT</div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link active" data-label="About">
+        <i class="fas fa-user"></i><span>About</span>
+      </a>
+      <a href="cv.html" class="nav-link" data-label="CV">
+        <i class="fas fa-file-alt"></i><span>CV</span>
+      </a>
+      <a href="product.html" class="nav-link" data-label="My Product">
+        <i class="fas fa-th-large"></i><span>My Product</span>
+      </a>
+      <a href="contact.html" class="nav-link" data-label="Contact">
+        <i class="fas fa-paper-plane"></i><span>Contact</span>
+      </a>
+    </nav>
+    <div class="sidebar-socials">
+      <a href="https://github.com/" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </aside>
+
+  <!-- Mobile top bar -->
+  <header class="topbar">
+    <div class="topbar-logo">PQT</div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link active"><i class="fas fa-user"></i> About</a>
+    <a href="cv.html" class="nav-link"><i class="fas fa-file-alt"></i> CV</a>
+    <a href="product.html" class="nav-link"><i class="fas fa-th-large"></i> My Product</a>
+    <a href="contact.html" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-inner fade-in">
+
+      <div class="about-hero">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <div class="avatar">
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div>
+        <div class="hero-text">
+          <p class="greeting">Xin chào, mình là</p>
+          <h1 class="name">Phạm Quốc Toàn</h1>
+          <div class="badge">Sinh viên IT</div>
+          <p class="bio">
+            Đam mê xây dựng những trải nghiệm web đẹp và hiệu quả. Mình yêu thích việc biến ý tưởng thành sản phẩm số thực tế — từng dòng code, từng pixel một.
+          </p>
+          <div class="hero-actions">
+            <a href="cv.html" class="btn-primary">Xem CV <i class="fas fa-arrow-right"></i></a>
+            <a href="contact.html" class="btn-outline">Liên hệ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-title">Kỹ năng</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma"></i>
+            <span>Figma</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV — Phạm Quốc Toàn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">PQT</div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link" data-label="About"><i class="fas fa-user"></i><span>About</span></a>
+      <a href="cv.html" class="nav-link active" data-label="CV"><i class="fas fa-file-alt"></i><span>CV</span></a>
+      <a href="product.html" class="nav-link" data-label="My Product"><i class="fas fa-th-large"></i><span>My Product</span></a>
+      <a href="contact.html" class="nav-link" data-label="Contact"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
+    </nav>
+    <div class="sidebar-socials">
+      <a href="https://github.com/" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <div class="topbar-logo">PQT</div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+    <a href="cv.html" class="nav-link active"><i class="fas fa-file-alt"></i> CV</a>
+    <a href="product.html" class="nav-link"><i class="fas fa-th-large"></i> My Product</a>
+    <a href="contact.html" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
+  </div>
+
+  <main class="main-content">
+    <div class="page-inner fade-in">
+      <div class="page-header">
+        <h1 class="page-title">Curriculum Vitae</h1>
+        <a href="#" class="btn-primary btn-sm" onclick="window.print()">
+          <i class="fas fa-download"></i> Tải CV
+        </a>
+      </div>
+
+      <div class="cv-grid">
+        <!-- Left -->
+        <div class="cv-col">
+          <div class="cv-block">
+            <h3 class="cv-block-title"><i class="fas fa-graduation-cap"></i> Học vấn</h3>
+            <div class="timeline-item">
+              <div class="timeline-year">2022 – nay</div>
+              <div class="timeline-content">
+                <strong>Cao Đẳng Việt Mỹ</strong>
+                <p>Công nghệ Thông tin</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2019 – 2022</div>
+              <div class="timeline-content">
+                <strong>THPT ...</strong>
+                <p>Tốt nghiệp loại Khá</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-block-title"><i class="fas fa-certificate"></i> Chứng chỉ</h3>
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-content">
+                <strong>Web Development Fundamentals</strong>
+                <p>freeCodeCamp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-block-title"><i class="fas fa-language"></i> Ngôn ngữ</h3>
+            <div class="lang-item">
+              <span>Tiếng Việt</span>
+              <div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div>
+            </div>
+            <div class="lang-item">
+              <span>Tiếng Anh</span>
+              <div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="cv-col">
+          <div class="cv-block">
+            <h3 class="cv-block-title"><i class="fas fa-briefcase"></i> Kinh nghiệm</h3>
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-content">
+                <strong>Dự án ComicVerse</strong>
+                <p>Xây dựng website showcase truyện tranh bằng Next.js, TypeScript, Tailwind CSS</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-content">
+                <strong>Portfolio cá nhân</strong>
+                <p>Thiết kế và triển khai portfolio website với HTML/CSS/JS thuần</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-block-title"><i class="fas fa-tools"></i> Công nghệ</h3>
+            <div class="tag-list">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <h3 class="cv-block-title"><i class="fas fa-star"></i> Điểm mạnh</h3>
+            <ul class="strength-list">
+              <li><i class="fas fa-check"></i> Tự học nhanh, chủ động</li>
+              <li><i class="fas fa-check"></i> Làm việc nhóm hiệu quả</li>
+              <li><i class="fas fa-check"></i> Chú ý chi tiết trong thiết kế</li>
+              <li><i class="fas fa-check"></i> Yêu thích giải quyết vấn đề</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
