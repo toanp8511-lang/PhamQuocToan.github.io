@@ -78,9 +78,6 @@ if (filterBtns.length > 0) {
   });
 }
 
-// ===========================
-// Skill bar animation on scroll
-// ===========================
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
